@@ -26,7 +26,7 @@ button {
 
 * {
     box-sizing: border-box;
-    user-select: none ;
+    user-select: none;
 }
 
 body {
@@ -51,7 +51,7 @@ main {
     padding: 2.5rem .5rem 0;
     font-weight: 400;
     letter-spacing: 0.25rem;
-  
+
 }
 
 .menu-lateral li {
@@ -59,12 +59,37 @@ main {
     transition: .5s;
 }
 
-.menu-lateral li:hover{
-    margin-left:15px;
+.menu-lateral li:hover {
+    margin-left: 15px;
 }
 
 
-.menu-lateral__link::before  {
+#searchInput {
+    width: 130px;
+    height: 26px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: .5s;
+}
+
+#searchInput:focus{
+    width: 130px;
+    height: 30px;
+} 
+
+
+.search {
+    position: absolute;
+    bottom: 60px;
+}
+
+.search>button {
+    padding-top: 50px;
+}
+
+
+.menu-lateral__link::before {
     padding-left: 1rem;
     padding-right: .5rem;
     vertical-align: middle;
@@ -109,7 +134,7 @@ main {
     user-select: none;
 }
 
-.cartao { 
+.cartao {
     background: var(--cinza);
     border-radius: .5rem;
 }
@@ -141,14 +166,14 @@ main {
 }
 
 
-section li{
+section li {
     transition: .5s;
 }
 
 
 section li:hover {
     transform: scale(1.1);
-  }
+}
 
 /*Seção vertical*/
 .secao-vertical .cartao {
@@ -169,20 +194,20 @@ section li:hover {
 .secao__cartoes::-webkit-scrollbar {
     height: .5rem;
 }
-  
+
 .secao__cartoes::-webkit-scrollbar-thumb {
     background-color: var(--cinza-claro);
     border-radius: .5rem;
 }
-  
+
 .secao__cartoes::-webkit-scrollbar-thumb:hover {
     background-color: var(--cinza-escuro);
 }
-  
+
 .secao__cartoes::-webkit-scrollbar-track {
     background-color: var(--gradiente);
-} 
- 
+}
+
 /*Navbar*/
 .navbar {
     background-color: var(--azul-fundo);
@@ -208,11 +233,11 @@ section li:hover {
 }
 
 
-.navbar__item:hover{
+.navbar__item:hover {
     margin-bottom: 20px;
- }
- 
- 
+}
+
+
 
 
 /*Grid*/
@@ -241,21 +266,21 @@ section li:hover {
 
 body {
     display: grid;
-    grid-template-areas: 
-    "aside header"
-    "aside main";
-    grid-template-columns: auto 1fr;    
+    grid-template-areas:
+        "aside header"
+        "aside main";
+    grid-template-columns: auto 1fr;
 }
 
-.cabecalho {     
+.cabecalho {
     grid-area: header;
 }
 
-.menu-lateral { 
+.menu-lateral {
     grid-area: aside;
 }
 
-.principal { 
+.principal {
     grid-area: main;
 }
 
@@ -275,7 +300,8 @@ body {
     row-gap: 2rem;
 }
 
-.secao-horizontal, .secao-vertical {
+.secao-horizontal,
+.secao-vertical {
     grid-template-rows: 70px auto;
 }
 
@@ -299,8 +325,8 @@ body {
 }
 
 
-.cartao__imagem{
-margin:30px;
+.cartao__imagem {
+    margin: 30px;
 }
 
 /*Dialog*/
@@ -316,22 +342,22 @@ margin:30px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    border:#041833;
+    border: #041833;
     z-index: 999;
     overflow: hidden;
 }
 
-.dialogo p{
+.dialogo p {
     text-align: justify;
     font-size: 16px;
 }
 
-.dialogo-container{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-gap:7px;
+.dialogo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
 }
 
 .dialogo button {
@@ -344,15 +370,11 @@ gap:7px;
     cursor: pointer;
 }
 
-.dialogo h2{
-    font-size:30px;
+.dialogo h2 {
+    font-size: 30px;
 }
 
-.buttons{
+.buttons {
     display: flex;
-    gap:30px;
+    gap: 30px;
 }
-
-
-
-

@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1023px) {
+
     .menu-lateral,
     .rodape,
     .cabecalho__botao,
@@ -16,7 +17,7 @@
 
     .navbar {
         display: block;
-    }   
+    }
 
     .cabecalho {
         justify-self: center;
@@ -29,7 +30,7 @@
     .secao-horizontal .cartao__imagem {
         height: 4.58rem;
     }
- 
+
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
         align-self: center;
@@ -40,12 +41,12 @@
         padding: 0;
     }
 
-    .navbar__items{
+    .navbar__items {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        gap:30px;
+        gap: 30px;
     }
 
     .dialogo {
@@ -53,7 +54,7 @@
         height: 760px;
     }
 
-    .dialogo #texto{
+    .dialogo #texto {
         font-size: 17.5px;
     }
 
@@ -71,7 +72,7 @@
     .cabecalho__botao__avancar {
         display: none;
     }
-    
+
     .menu-lateral {
         width: 208px;
     }
@@ -97,12 +98,12 @@
         padding: 1.25rem;
     }
 
-    .navbar__items{
+    .navbar__items {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        gap:30px;
+        gap: 30px;
     }
 
     .dialogo {
@@ -110,7 +111,7 @@
         height: 580px;
     }
 
-    .dialogo p{
+    .dialogo p {
         font-size: 14px;
     }
 
@@ -127,20 +128,20 @@
         width: 228px;
     }
 
-    .navbar__items{
+    .navbar__items {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        gap:30px;
+        gap: 30px;
     }
- 
+
 
 
     .dialogo {
         width: 800;
         height: 400px;
     }
-    
+
 
 }

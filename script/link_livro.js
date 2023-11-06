@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const livros = document.querySelectorAll('.cartao');
 
     livros.forEach(livro => {
@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 //livro 1
                 if (livroId === 'livro1') {
                     linkSite = 'https://play.google.com/books/reader?id=TwE_EAAAQBAJ&pg=GBS.PP1&hl=pt_PT';
-                } 
+                }
                 //livro 2
                 else if (livroId === 'livro2') {
                     linkSite = 'https://site-do-livro-dois.com';
                 }
-                 //livro 3
-                 else if (livroId === 'livro3') {
+                //livro 3
+                else if (livroId === 'livro3') {
                     linkSite = 'https://instagram.com';
                 }
 
@@ -51,7 +51,7 @@ const informacoesLivros = {
     livro2: {
         titulo: "Livro 2",
         descricao: "O grande clássico de todos os tempos! As sábias, encantadoras e inesquecíveis histórias contadas pelo pequeno príncipe falam de seu próprio planeta, com seus três vulcões e uma flor presunçosa. Uma história maravilhosa e profunda, para todas as idades, e ilustrada pelo próprio autor.  Edição brochura, no formato tradicional da obra. Nova tradução, pela professora de Literatura Francesa Isolina Bresolin Vianna. Ilustrado com as aquarelas do próprio Saint-Exupéry.  O pequeno príncipe é um dos maiores clássicos da literatura francesa. Sempre presente nas listas de best-sellers, já foi publicado em mais de 250 idiomas, e tornou-se o livro mais lido e mais traduzido na literatura internacional. Esta edição, que conta ainda com uma inovação editorial:é a única a trazer as ilustrações posicionadas fielmente à sequência da própria narrativa.",
-        autor: "Carinha veio"
+        autor: "Autor"
     },
     livro3: {
         titulo: "Livro 3",
@@ -72,3 +72,34 @@ const informacoesLivros = {
     },
     // E assim por diante para cada livro
 };
+
+
+//Buscar
+// Função para buscar o livro
+function buscarLivro() {
+    var termoDeBusca = document.getElementById("searchInput").value.toLowerCase();
+    var titulosLivros = document.querySelectorAll(".cartao__titulo");
+
+    let algumLivroEncontrado = false;
+
+    for (var i = 0; i < titulosLivros.length; i++) {
+        var titulo = titulosLivros[i].innerText.toLowerCase();
+        var cartao = titulosLivros[i].parentNode.parentNode;
+
+        if (titulo.includes(termoDeBusca)) {
+            cartao.style.display = "block";
+            algumLivroEncontrado = true;
+        } else {
+            cartao.style.display = "none";
+        }
+    }
+
+    // Exibe um alerta se nenhum resultado for encontrado
+    if (!algumLivroEncontrado) {
+        alert("Nenhum livro encontrado para a busca realizada.");
+        // Recarrega a página após 3 segundos
+        setTimeout(function() {
+            location.reload();
+        }, 3000);
+    }
+}

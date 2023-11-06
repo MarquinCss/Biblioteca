@@ -16,25 +16,38 @@
 <body>
 
     <header class="cabecalho container">
-        <a href="#"><img class="cabecalho__logo" src="./img/logo.png" alt="Logo Pão dos Pobres"></a>
-        
+        <a href="https://marquincss.github.io/Biblioteca/"><img class="cabecalho__logo" src="./img/logo.png"
+                alt="Logo Pão dos Pobres"></a>
+
     </header>
 
     <aside class="menu-lateral">
-        <a href="#" class="menu-lateral__logo"><img src="./img/logo_cropped.png" alt="Logo do pão"></a>
+        <a href="https://marquincss.github.io/Biblioteca/" class="menu-lateral__logo"><img src="./img/logo_cropped.png"
+                alt="Logo do pão"></a>
         <nav>
             <ul>
-                <li class="menu-lateral__link ativo"><button aria-label="Botão acessar home"><img src="./img/home-branco.svg" alt="Logo do Home">Home</button></li>
-                <li class="menu-lateral__link"><button aria-label="Botão acessar campo de busca"><img src="./img/search-branco.svg" alt="Logo do botão de busca">Busca</button></li>
-                <li class="menu-lateral__link"><button aria-label="Botão acessar sua biblioteca"><img src="./img/bookmark-branco.svg" alt="Logo do botão sua biblioteca">Sua Biblioteca</button></li>
+                <li class="menu-lateral__link ativo"><button aria-label="Botão acessar home"><img
+                            src="./img/home-branco.svg" alt="Logo do Home">Home</button></li>
+
+
+                <li class="menu-lateral__link"><button aria-label="Botão acessar campo de busca"><img id="searchButton"
+                            onclick="buscarLivro()" class="searchh" src="./img/search-branco.svg"
+                            alt="Logo do botão de busca">
+                            
+                            <input type="text" id="searchInput"
+                            placeholder="Pesquisar livros..."></button></li>
+
+
+                <li class="menu-lateral__link"><button aria-label="Botão acessar sua biblioteca"><img
+                            src="./img/bookmark-branco.svg" alt="Logo do botão sua biblioteca">Sua Biblioteca</button>
+                </li>
             </ul>
         </nav>
-      
+
     </aside>
 
     <main class="principal container">
-        <section data-aos="fade-up"
-        data-aos-duration="2000" class="secao secao-vertical">
+        <section data-aos="fade-up" data-aos-duration="2000" class="secao secao-vertical">
             <h2 class="secao__titulo">Livros do momento:</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -46,7 +59,7 @@
                         <h4 class="cartao__subtitulo">Mariana Rosa, Simone Ledesma Quadros, e outros.</h4>
                     </a>
                 </li>
-                  <!--Livro 2-->
+                <!--Livro 2-->
                 <li id="livro2" class="cartao">
                     <a href="#">
                         <img class="cartao__imagem" src="./img/capas/ulmh.jpg" alt="Legenda do livro">
@@ -54,7 +67,7 @@
                         <h4 class="cartao__subtitulo">Autor</h4>
                     </a>
                 </li>
-                    <!--Livro 1-->
+                <!--Livro 1-->
                 <li id="livro3" class="cartao">
                     <a href="#">
                         <img class="cartao__imagem" src="./img/capas/ulmh.jpg" alt="Legenda do livro">
@@ -85,9 +98,8 @@
                 </li>
             </ul>
         </section>
-       
-        <section   data-aos="fade-up"
-        data-aos-duration="2000" class="secao secao-vertical">
+
+        <section data-aos="fade-up" data-aos-duration="2000" class="secao secao-vertical">
             <h2 class="secao__titulo">Indicação da comunidade Pão dos Pobres:</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -135,8 +147,7 @@
                 </li>
             </ul>
         </section>
-        <section   data-aos="fade-up"
-        data-aos-duration="2000"  class="secao secao-vertical">
+        <section data-aos="fade-up" data-aos-duration="2000" class="secao secao-vertical">
             <h2 class="secao__titulo">Autorais Pão dos Pobres:</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre os autorais...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -184,8 +195,7 @@
                 </li>
             </ul>
         </section>
-        <section  data-aos="fade-up"
-        data-aos-duration="2000"   class="secao secao-vertical">
+        <section data-aos="fade-up" data-aos-duration="2000" class="secao secao-vertical">
             <h2 class="secao__titulo">Section sem nome ainda</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -237,46 +247,55 @@
 
     <div class="navbar">
         <ul class="navbar__items">
-            <li class="navbar__item navbar__item--home"><form action="."><button aria-label="Botão acessar Home"><img src="./img/home-branco.svg" alt="Logo do botão acessar Home">Home</button></form></li>
-            <li class="navbar__item navbar__item--busca"><form action="."><button aria-label="Botão acessar campo de busca"><img src="./img/search-branco.svg" alt="Logo do botão acessar campo de busca">Busca</button></form></li>
-            <li class="navbar__item navbar__item--biblioteca"><form action="."><button aria-label="Botão acessar sua biblioteca"><img src="./img/bookmark-branco.svg" alt="Logo do botão acessar sua biblioteca">Sua Biblioteca</button></form></li>
+            <li class="navbar__item navbar__item--home">
+                <form action="."><button aria-label="Botão acessar Home"><img src="./img/home-branco.svg"
+                            alt="Logo do botão acessar Home">Home</button></form>
+            </li>
+            <li class="navbar__item navbar__item--busca">
+                <form action="."><button aria-label="Botão acessar campo de busca"><img src="./img/search-branco.svg"
+                            alt="Logo do botão acessar campo de busca">Busca</button></form>
+            </li>
+            <li class="navbar__item navbar__item--biblioteca">
+                <form action="."><button aria-label="Botão acessar sua biblioteca"><img src="./img/bookmark-branco.svg"
+                            alt="Logo do botão acessar sua biblioteca">Sua Biblioteca</button></form>
+            </li>
         </ul>
     </div>
 
-   
-
-<!--Dialog-->
-<div id="dialogo" class="dialogo">
-    <div class="dialogo-container">
-    <h2 class="titulo-livro"></h2>
-    <p id="texto" class="descricao-livro"></p>
-    <p class="autor-livro"></p>
-    <div class="buttons">
-    <button id="fechar-dialogo">Fechar</button>
-    <a id="ler-livro" href="#" target="_blank"><button>Quero ler esse</button></a>
-</div>
-</div>
-</div>
 
 
-<!-------------------------BOTÃO DE LIBRAS ---------------->
-<div vw class="enabled">
-    <div accesskey="5" tabindex="0" vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <!--Dialog-->
+    <div id="dialogo" class="dialogo">
+        <div class="dialogo-container">
+            <h2 class="titulo-livro"></h2>
+            <p id="texto" class="descricao-livro"></p>
+            <p class="autor-livro"></p>
+            <div class="buttons">
+                <button id="fechar-dialogo">Fechar</button>
+                <a id="ler-livro" href="#" target="_blank"><button>Quero ler esse</button></a>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-  
-  
 
 
-<script src="./script/link_livro.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+    <!-------------------------BOTÃO DE LIBRAS ---------------->
+    <div vw class="enabled">
+        <div accesskey="5" tabindex="0" vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+
+
+
+    <script src="./script/link_livro.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

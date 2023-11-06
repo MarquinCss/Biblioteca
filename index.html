@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/responsivo.css">
+   
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                             onclick="buscarLivro()" class="searchh" src="./img/search-branco.svg"
                             alt="Logo do botão de busca">
                             
-                            <input type="text" id="searchInput"
+                            <input type="text"  onkeypress="verificarTecla(event)" id="searchInput"
                             placeholder="Pesquisar livros..."></button></li>
 
 
@@ -285,12 +286,11 @@
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
+   
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script> 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.js"></script>
+    <script src="./script/verificar_tecla.js"></script>
     <script src="./script/link_livro.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

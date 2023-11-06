@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./img/logo_cropped.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -32,7 +33,8 @@
     </aside>
 
     <main class="principal container">
-        <section class="secao secao-vertical">
+        <section data-aos="fade-up"
+        data-aos-duration="2000" class="secao secao-vertical">
             <h2 class="secao__titulo">Livros do momento:</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -84,7 +86,8 @@
             </ul>
         </section>
        
-        <section class="secao secao-vertical">
+        <section   data-aos="fade-up"
+        data-aos-duration="2000" class="secao secao-vertical">
             <h2 class="secao__titulo">Indicação da comunidade Pão dos Pobres:</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -132,7 +135,8 @@
                 </li>
             </ul>
         </section>
-        <section class="secao secao-vertical">
+        <section   data-aos="fade-up"
+        data-aos-duration="2000"  class="secao secao-vertical">
             <h2 class="secao__titulo">Autorais Pão dos Pobres:</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre os autorais...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -180,7 +184,8 @@
                 </li>
             </ul>
         </section>
-        <section class="secao secao-vertical">
+        <section  data-aos="fade-up"
+        data-aos-duration="2000"  class="secao secao-vertical">
             <h2 class="secao__titulo">Section sem nome ainda</h2>
             <a class="secao__link" href="#" aria-label="Clique aqui para ver mais sobre...">Ver mais</a>
             <ul class="secao__cartoes">
@@ -252,7 +257,14 @@
 </div>
 </div>
 </div>
+
+
+
 <script src="./script/link_livro.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

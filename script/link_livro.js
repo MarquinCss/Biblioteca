@@ -58,5 +58,17 @@ const informacoesLivros = {
         descricao: "Descrição do Livro 3",
         autor: "Autor do Livro 3"
     },
+
+    livro4: {
+        titulo: "Livro 3",
+        descricao: "Descrição do Livro 3",
+        autor: "Autor do Livro 3"
+    },
+
+    livro5: {
+        titulo: "Livro 3",
+        descricao: "Descrição do Livro 3",
+        autor: "Autor do Livro 3"
+    },
     // E assim por diante para cada livro
 };
